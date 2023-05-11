@@ -1,0 +1,27 @@
+{
+  "name": "playwright_udemy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests:e2e": "playwright test --config=playwright.config.js --project=chromium --reporter=list",
+    "tests:chrome": "playwright test --config=playwright.config.js --project=chromium --reporter=list",
+    "tests:firefox": "playwright test --config=playwright.config.js --project=firefox --reporter=list",
+    "tests:webkit": "playwright test --config=playwright.config.js --project=webkit --reporter=list",
+    "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janocasanova/playwright_udemy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janocasanova/playwright_udemy/issues"
+  },
+  "homepage": "https://github.com/janocasanova/playwright_udemy#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.32.2"
+  }
+}
